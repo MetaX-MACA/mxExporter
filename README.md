@@ -66,6 +66,6 @@ Helm install using package
         --set image.tag=x.x.x \
     ```
 **Options**:
-    - service.port - set container port, default is 8000
-    - gatherInterval - unit: ms, default is 10000
+- service.port - set container port, default is 8000
+- gatherInterval - unit: ms, default is 10000
 
