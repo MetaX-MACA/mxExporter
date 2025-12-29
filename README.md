@@ -29,9 +29,9 @@ $ sudo docker run -d --name=mx-exporter --device=/dev/dri -p 0.0.0.0:<host port>
 ```
 $ python3 -m mx_exporter -p <port> -i <interval> -c <config_file>
 ```
-port: http listen port, default:8000
-interval: Metrics gathering interval, default:10000ms
-config_file: Metrics configuration file in CSV format, default: ./default-counters.csv
+- port: http listen port, default:8000
+- interval: Metrics gathering interval, default:10000ms
+- config_file: Metrics configuration file in CSV format, default: ./default-counters.csv
 
 ## Deployment
 
@@ -65,7 +65,7 @@ Helm install using package
         --set image.repository=xxxx \
         --set image.tag=x.x.x \
     ```
-Options:
-    service.port - set container port, default is 8000
-    gatherInterval - unit: ms, default is 10000
+**Options**:
+    - service.port - set container port, default is 8000
+    - gatherInterval - unit: ms, default is 10000
 
